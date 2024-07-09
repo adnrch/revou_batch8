@@ -1,12 +1,209 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>test</title>
+        <title>h2 revoU</title>
+        <style>
+            button {
+                width: 100%;
+            }
+        </style>
     </head>
 </html>
     <body>
         <h1>hello</h1>
         <h2>world</h2>
-        <h3>gaes</h3>
+        <h3 style="color: brown;">Gaes</h3>
+        <p>test paragraf</p>
+        <br>
+        <hr>
+        <br>
+        <p> test paragraf 2</p>
+        <!-- ini untuk test komentar ctrl + k + c-->
+        <!-- cara buat styling -->
+        <p><i>style italic</i><b>style bold</b></p>
+        <!-- command untuk unordered list -->
+        <ul><!--  defaultnya titik bulat -->
+            <li>apple</li>
+            <li>pear</li>
+        </ul>
+        <ul type="square"> <!--  <untuk ganti type> -->
+            <li>apple</li>
+            <li>pear</li>
+        </ul>
+        <ol type="I"> <!--  untuk bikin list urutan macam2 type 1/a/A/i/I -->
+            <li>apple</li>
+            <li>pear</li>
+        </ol>
+        <!-- cara buat table -->
+        <table>        <!-- parent yang membungkus -->
+            <tr> <!-- table row -->
+             <th>ini table head</th>
+             <th>ini table head2</th> <!-- table head sebagai judul kolom autobold seperti h1 -->
+             <th colspan="3">table head3</th> <!-- untuk merge colom sebanyak jumlah colspan-->
+            </tr>
+            <tr><!--  table row yang baru -->
+             <td>ini table data1</td><!-- table data sebagai isinya -->
+             <td>ini table data2</td>
+             <td>ini table data3</td>
+             <td>ini table data4</td>
+             <td>ini table data5</td> 
+            </tr>
+            <tr>
+             <th rowspan="2">test rowspan 2</th>
+             <td>ini table data6</td>
+             <td>ini table data7</td>
+             <td>ini table data7</td>
+             <td>ini table data7</td>
+            </tr>
+            <tr>
+             <td>ini table data8</td>
+             <td>ini table data9</td>
+             <td>ini table data9</td>
+             <td>ini table data9</td>
+            </tr>
+        <!-- untuk tambahin garis tambahin style css biasa di bikin di head untuk lebih rapi -->
+        <style>
+            table, th,td {border: 1px solid black;}
+        </style>
+        </table>
+        <!-- cara tambah image dari luar web-->
+        <img src="https://asset-2.tstatic.net/jatim/foto/bank/images/Artinya-Apa-Bang-Messi-viral-ABCAD.jpg" 
+        alt="bang messi"/>  <!--alt untuk scan read untuk search engine-->
+        <br> <!--cara enter-->
+        <!-- cara untuk menampilkan hyperlink -->
+        <a href="https://www.google.com/">link ke google</a> <!-- cara untuk menampilkan hyperlink -->
+        <br> <!--cara enter-->
+        <a href="index.html">membuat hyperlink ke file html yang telah disimpan</a> <!-- cara untuk menampilkan hyperlink -->
+        <br> <!--cara enter-->
+        <a href="#aku">Cari aku</a> <!-- cara navigasi di halaman yang sama -->
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <p>kau</p>
+        <!-- untuk navigasi dalam halaman yang sama, kita pakai atribut id harus sama dengan yang di # -->
+        <p id="aku">aku</p>
+        <!-- CARA BUAT FORM -->
+        <!-- gunanya untuk menyimpan data dari client side ke server -->
+        <form action="" method="post">   <!-- parent untuk form -->
+         <label for="name">Nama : </label>  <!-- label sebagai nama baris dalam formnya-->
+         <input id="name" type="text"> <!-- input ini sebagai type dari label yang dibuat dan membuat kotak input-->
+         <br>
+         <label for="password">Password : </label>  
+         <input id="password" type="password" required>     
+         <br>
+         <label for="email">Email : </label>  
+         <input id="email" type="email"> 
+         <br>
+         <label for="checkbox">ini checkbox untuk pilihan yang bisa banyak : </label>
+         <input type="checkbox">
+         <br>
+         <label for="radio">ini radio untuk pilihan yg hanya 1 : </label>
+         <input type="radio">
+         <br>
+         <!-- contoh dari multiple radio button-->
+         <input type="radio" id="html" name="fav_lang" value="HTML"> <!-- value tidak di tampilkan, value untuk sudah connect ke API untuk di proses di backend-->
+         <label for="html">HTML</label>
+         <br>
+         <input type="radio" id="css" name="fav_lang" value="CSS">
+         <label for="css">CSS</label>
+         <br>
+         <input type="radio" id="javascript" name="fav_lang" value="JavaScript">
+         <label for="javascript">JavaScript</label>
+         <br>
+         <br>
+         <input type="number" min="1" max="99">
+         <br>
+         <textarea rows="9" cols="100">ketik disini</textarea> <!-- cara buat textbox-->
+         <br>
+        <!-- tutor form pilihan -->
+         <p>Apa warna favorit</p>
+         <select>        <!-- command memilih salah satu option dari yang kita sediakan -->
+            <option>Me</option>
+            <option>Ji</option>
+            <option>Ku</option>
+         </select>
+         <p>Apa makanan favorit</p>
+         <select>
+            <option>pempek</option>
+            <option>naspad</option>
+            <option>gado2</option>
+         </select>
+         <p>contoh option group</p>  <!-- option group untuk menglompokan pilihan yang kita drop -->
+         <select>
+            <optgroup label="nama2 Jus"></optgroup>
+            <option>Jus mangga</option>
+            <option>Just kiding</option>
+            <option>coach justin</option>
+            <optgroup label="nama2 minum"></optgroup>
+            <option>scotch</option>
+            <option>alcohol</option>
+            <option>bbutter</option>
+         </select>
+         <!-- TUTOR fieldset-->
+         <br>
+         <fieldset>  <!--fieldset mengelompokan form ke bagian yang lebih kecil-->
+            <br>
+            <legend>Data Diri</legend>  <!--judul fieldset-->
+            <label for="name">Nama : </label> 
+            <input id="name" type="text">
+            <br>
+            <label for="password">Password : </label>  
+            <input id="password" type="password" required> 
+            <br>
+         </fieldset>
+         <input type="submit" value="SUBMIT"> <!--belum bisa dibuat untuk submit, harus di gabung dengan back end menggunakan API-->
+         <button type="button">OK</button> <!--cara buat button sembarang-->
+         <button type="button" onclick="dosomething();">Apply</button> <!--cara buat button yang di hubungkan dengan Javascript, dalam contoh akan memanggil JS dosometing-->
+        </form>
+    <!-- TUTOR KALKULATOR <th colspan="3">table head3</th> <!-- untuk merge colom sebanyak jumlah colspan-->-->
+      <table>
+        <tr>
+            <th colspan="4"><input type="text" name="display"> </th>
+        </tr>
+            <td colspan="2"><button type="button">AC</button></td>
+            <td><button type="button">C</button></td>
+            <td><button type="button">*</button></td>
+        <tr></tr>
+            <td><button type="button">7</button></td>
+            <td><button type="button">8</button></td>
+            <td><button type="button">9</button></td>
+            <td><button type="button">/</button></td> 
+        <tr></tr>
+            <td><button type="button">4</button></td>
+            <td><button type="button">5</button></td>
+            <td><button type="button">6</button></td>
+            <td><button type="button">+</button></td>
+        <tr></tr>
+            <td><button type="button">1</button></td>
+            <td><button type="button">2</button></td>
+            <td><button type="button">3</button></td>
+            <td><button type="button">-</button></td>
+        <tr></tr>
+            <td><button type="button">+-</button></td>
+            <td><button type="button">0</button></td>
+            <td><button type="button">.</button></td>
+            <td><button type="button">=</button></td>
+        <tr></tr>
+      </table>
     </body>
 </html>
