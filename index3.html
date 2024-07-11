@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>test CSS</title>
+        <style>
+            h2 {
+                color: blue;
+            }
+
+            h4 {
+                color: orange;
+            }
+
+            .mobil{color: 
+                turquoise; /* semua class mobil jadi maroon */
+            }
+
+            #alya {
+                color: purple; /* semua id alya jadi maroon, urutan hirarki yg di apply id>class> internal*/ 
+            }
+
+            a[target]{
+                background-color: yellow;
+            }
+            a:hover{
+                background-color: gold; /* tutor untuk cara sudo class, element a yang mau kita styling : sudo classnya hover */ 
+            }
+            h5{
+                color: rgb(0, 217, 255); /* tutor rgb */
+            }
+            h6{
+                color:#00ff00; /* tutor decimal */
+            }
+            h7{
+                color:hsl(360, 99%, 50%); /* tutor hsl hue saturation lightness value*/
+            }
+            
+            div{
+                width: 100px; /* tutor ganti background*/
+                height: 100px;
+                background : linear-gradient(rgb(193, 0, 252),yellow) /* tutor linear gradient, ada radial, dan bisa tambah derajat*/
+            }
+                    /* tutor ganti background image*/
+            body{
+                background-color: lightgray;
+                background: url("https://asset-2.tstatic.net/jatim/foto/bank/images/Artinya-Apa-Bang-Messi-viral-ABCAD.jpg");
+                background-position: left top;
+                background-size: 800 px 800px ;
+            }
+
+            /* tutor ganti font & text*/          
+            p {
+                font-family: "Impact", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-style: italic, bold;
+                text-transform: uppercase;
+                text-decoration: line-through;
+                text-shadow: -4px 4px 4x maroon;
+                line-height: 50%;
+                letter-spacing: 2px;
+                word-spacing: 4px;
+                text-align: left;
+                text-indent: 2rem;
+            }
+
+        </style>
+        <link rel="stylesheet" href="index.css">  <!-- rel stylesheet maksudnya apa, yg penting href nama file css -->
+    </head>
+    <body>
+        <h1 style="color: red;">ini codingan css inline</h1> <!-- contoh css inline -->
+        <h2>ini codingan css internal</h2>  <!-- contoh css internal -->
+        <h3>ini codingan css eksternal</h3>  <!-- contoh css eksternal, ingat perlu di insert dulu file css ke dalam html yg dibuat-->
+        <!-- tutor CSS selector -->
+        <h4>halo</h4>
+        <p>hi</p>
+        <p class="mobil" id="avanza">Ini Avanza contoh css selector</p> <!-- contoh css selector tag p yang punya class mobil, dan punya id tersendiri  -->
+        <p class="mobil" id="alya">ini Alya</p>
+        <!-- tutor CSS Attribute Selector  -->
+        <a href="https://www.w3schools.com/">w3schools.com ini tanpa attribute selector</a>
+        <a href="https://www.disney.com/" target="_blank">disney.com</a> <!-- untuk semua yang memiliki target akan berubah yellow  -->
+        <a href="https://www.wikipedia.com/" target="_top">wikipedia.org</a>
+        <!-- tutor color  -->
+         <h5>welcome</h5>  <!-- pakai rgb  -->
+         <h6>to batavia elite</h6> <!-- pakai decimal  -->
+         <h7>tutor web bangg</h7> <!-- pakai hsl  -->
+         <!-- tutor backgroud styling  -->
+         <div></div>
+         <br>
+         <p>
+         contoh styling text!   
+         </p>
+    </body>
+</html>
